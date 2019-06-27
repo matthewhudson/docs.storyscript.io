@@ -53,14 +53,6 @@ Many think of Storyscript as glue code for microservices, flow-code, or pure bus
 
 ![stackup](./stackup.png)
 
-> Storyscript amplifies the developer to build robust, scalable backend applications in a fraction of the time by focusing on what matters most: the story of data, *everything else is noise*.
-
-## Storyscript Cloud
-
-In addition to providing a new top-level programming language, we are also providing a hosted solution for running your stories in the cloud: [Storyscript Cloud](https://storyscript.io/).
-
-We are currently in a closed beta.
-
 ## Why Storyscript?
 
 The developer dream is to build software like Legos; writing code as a story of data between well orchestrated services with the least amount of boilerplate and complexity.
