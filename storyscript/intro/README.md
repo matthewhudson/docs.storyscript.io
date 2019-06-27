@@ -1,5 +1,5 @@
 ---
-prev: /cloud/quick-start/
+prev: /quick-start/
 next: /storyscript/writing/
 ---
 

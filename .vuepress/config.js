@@ -44,11 +44,10 @@ module.exports = {
       icon: 'home',
       path: '/'
     }, {
-      title: 'Storyscript Cloud',
+      title: 'Quick Start',
       icon: 'cloud',
       children: [
-        '/cloud/intro/',
-        '/cloud/quick-start/'
+        '/quick-start/'
       ]
     }, {
       title: 'Storyscript Language',
