@@ -5,7 +5,7 @@ next: /storyscript/syntax/
 
 # Writing a Story
 
-Storyscript is built to allow you to focus on the *story* of your data, above all else.
+✨Storyscript is the top-level, polyglot programming language that seamlessly moves data between microservices and functions in a serverless way with zero-devops deployments.✨
 
 ## Basics: HTTP Responses
 Let's start with an HTTP server that responds with `Hello, world!` to an incoming request:
