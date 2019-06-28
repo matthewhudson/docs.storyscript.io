@@ -5,6 +5,8 @@ next: /storyscript/writing/
 
 # Quick Start
 
+## Introduction
+
 The story of Storyscript started with questions any curious engineer should be asking: *Why is there so much complexity in development?* *What is the future of programming?* *How can we lower the bar of development to bring more (many more) developers to our beloved community?* We saw a trend in the industry and agreed the time was perfect for, what we believe, the future of programming. Our mission is simple: be the future of programming and bring the power of coding to a billion people by making application development over 10x easier.
 
 🙋‍Storyscript is **open source** under Apache 2.0 license in [GitHub](https://github.com/storyscript).<br>
