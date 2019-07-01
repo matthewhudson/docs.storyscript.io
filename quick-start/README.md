@@ -122,8 +122,8 @@ cat http.story
 ```
 
 ```coffeescript
-when http server listen method: 'get' path: '/' as request
-    request write content: 'Hello world!'
+when http server listen method: "get" path: "/" as request
+    request write content: "Hello world!"
 ```
 > It's just a simple http server but a great starting point to just get *something* working. We have many other simple and complex examples [here](https://github.com/storyscript/examples).
 
@@ -158,7 +158,7 @@ A quick introduction to how the Storyscript platform works.
 
 The **Stroyscript language** is a new language designed for business-logic which describes the flow of data between services. It **does not replace any other language**; is unites all other languages in a polyglot development platform being the most inclusive programming language. The language was inspired by many other languages giving it a natural and intuitive familiarity. It's **strongly-typed** and compiled into the Storyscript cloud-native runtime. We call this **top-level coding with a cloud-native programming language**.
 
-The **Storyscript runtime** is a cloud-native orchestrator that **uses Kubernetes under-the-hood** as the container scheduler framework. The runtime will transform your stories into a cached model of instructions that simply moves data between the services. Think `IF this THAN that`, `WHEN this DO that`, `WAIT for this THEN do that`, `WHILE this DO that` and all the `this thats` are services.
+The **Storyscript runtime** is a cloud-native orchestrator that **uses Kubernetes under-the-hood** as the container scheduler framework. The runtime will transform your stories into a cached model of instructions that simply moves data between the services. Think `IF this THAN that`, `WHEN this DO that`, `WAIT for this THEN that`, `WHILE this DO that` and all the `this thats` are services.
 
 **Services** are independent components of highly-reusable software: a Docker container, OpenAPI spec, AsyncAPI specs, a single high-level language function, or another Storyscript. Developer are empowered to build polyglot applications by choosing any programming language to do the heavy lifting while Storyscript describes the interactions between these services. Services use the [Open Microservice Guide](https://microservice.guide/) to be free to make their own choices on language, protocol, serialization while providing consistent well-documented and domain-specific events and actions of the service. 
 
