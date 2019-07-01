@@ -3,17 +3,24 @@ prev: false
 next: /storyscript/writing/
 ---
 
+<script>
+import { Tweet } from 'vue-tweet-embed/dist'
+
+export default {
+    components: {Tweet}
+}
+</script>
+
 # Quick Start
 
-## Introduction
+## Our Story
 
-The story of Storyscript started with questions any curious engineer should be asking: *Why is there so much complexity in development?* *What is the future of programming?* *How can we lower the bar of development to bring more (many more) developers to our beloved community?* We saw a trend in the industry and agreed the time was perfect for, what we believe, the future of programming. Our mission is simple: be the future of programming and bring the power of coding to a billion people by making application development over 10x easier.
+It started with questions any curious person should be asking: *Why is there so much complexity in development?* *How can we lower the bar of development?* *What is the future of programming?* High-level languages created 100x the number of developers while simultaneously making development 100x easier. We believe it's time to think beyond high-level languages and look towards a new language built on the cloud, for the cloud, that transforms the industry like high-level languages once did.
 
-🙋‍Storyscript is **open source** under Apache 2.0 license in [GitHub](https://github.com/storyscript).<br>
+✨Storyscript is the **polyglot, cloud-native programming language of the future**.<br>
+🙋‍**Open Source** under Apache 2.0 license in [GitHub](https://github.com/storyscript).
 
-**Applications are stories of data.** A story of how data moves between services defines your unique product. It should be intuitive to write, simple to read and focused on what matters most: business-logic. *Everything else is just noise.*
-
-✨Storyscript is the top-level, polyglot programming language that seamlessly moves data between microservices and functions in a serverless way with zero-devops deployments.✨
+<Tweet id="1145647520040869888"></Tweet>
 
 ## Getting started
 
@@ -86,7 +93,7 @@ Next, login with your GitHub account:
 story login
 ```
 
-All done! You're all set to create and deploy apps written in Storyscript.
+All done! 💪 You're all set to create and deploy your apps.
 
 
 ## Write your first Story
@@ -102,7 +109,7 @@ story apps create
 
 > This generated the `story.yml` file which is used to identify your application and provide metadata to configure version and secrets variables.
 
-We have created a few examples that can help you bootstrap your project. Let's start you off with a simple hello-world serverless http endpoint:
+We have created a few examples that can help you bootstrap your project. Let's start you off with the classic hello-world:
 
 ```bash
 story write http > http.story
@@ -132,15 +139,17 @@ story deploy
 
 🎉 Congratulations! You have just deployed your first Story!
 
-::: tip What just happened?
+::: tip What just happened behind the scene?
 
 The output from your deployment will share some details about what happened, because it's quite amazing!
-1. Your story was compiled and checked for issues before deploying.
-1. The services you require were pulled and deployed to Kubernetes pods.
-1. Functions were packaged in containers and deployed as services like above.
-1. All services were started, events subscribed and ingress routes assigned.
 
-The above would have all been manual work, typically in the form of Kubernetes configuration files which are automatically generated during deployment in the Storyscript Cloud.
+1. Storyscript is **strongly-typed**, therefore your stories were verified and syntax checked before deploying.
+1. Services are pulled from the [Hub](https://hub.storyscript.io) and deployed to Kubernetes pods.
+1. *Coming soon!* Functions were packaged in containers and deployed as services like above.
+1. Services were started, events subscribed and ingress routes assigned.
+1. The Storyscript Runtime caches your story for fast execution, acting as a microservice orchestrator.
+
+The above would have mostly been manual work, typically in the form of Kubernetes configuration files which are automatically generated during deployment in the Storyscript Cloud.
 :::
 
 ## Putting it all together

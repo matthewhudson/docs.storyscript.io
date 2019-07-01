@@ -25,5 +25,7 @@
     "vuepress-plugin-sitemap": "^2.1.2",
     "vuepress-theme-story": "^0.0.10"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vue-tweet-embed": "^2.3.0"
+  }
 }
