@@ -15,7 +15,7 @@ export default {
 
 ## Our Story
 
-It started with questions any curious person should be asking: *Why is there so much complexity in development?* *How can we lower the bar of development?* *What is the future of programming?* High-level languages created 100x the number of developers while simultaneously making development 100x easier. We believe it's time to think beyond high-level languages and look towards a new language built on the cloud, for the cloud, that transforms the industry like high-level languages once did.
+It started with questions any curious person should be asking: *Why is there so much complexity in development?* *How can we lower the bar of development?* *What is the future of programming?* High-level languages enabled millions of people to call themselves developers while simultaneously making development exponentially easier. We believe it's time to think beyond high-level languages and look towards a new language built on the cloud, for the cloud, that transforms the industry like high-level languages once did.
 
 ✨Storyscript is the **polyglot, cloud-native programming language of the future**.<br>
 🙋‍**Open Source** under Apache 2.0 license in [GitHub](https://github.com/storyscript).
