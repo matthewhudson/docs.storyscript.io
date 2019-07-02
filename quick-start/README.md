@@ -20,7 +20,9 @@ It started with questions any curious person should be asking: *Why is there so 
 ✨Storyscript is the **polyglot, cloud-native programming language of the future**.<br>
 🙋‍**Open Source** under Apache 2.0 license in [GitHub](https://github.com/storyscript).
 
-<Tweet id="1145647520040869888"></Tweet>
+<div align="center">
+  <Tweet id="1145647520040869888"></Tweet>
+</div>
 
 ## Getting started
 
@@ -31,33 +33,28 @@ First, install our CLI:
 <table width="100%">
 <tr>
 <td style="text-align:center" width="100%" valign="top" colspan="2">
-<details :open="$page.os === 'macos'">
-<summary><h4><img src="../assets/apple-logo.svg" width="15"> macOS</h4></summary>
+<h2><img src="../assets/apple-logo.svg" width="15"> macOS</h2>
 
 ```bash
 brew install storyscript/brew/story
 ```
 
-</details>
 </td>
 <!--
 <td style="text-align:center" width="50%" valign="top">
-<details :open="$page.os === 'windows'">
-<summary><h4><img src="../assets/windows-logo.svg" width="15"> Windows</h4></summary>
+<h2><img src="../assets/windows-logo.svg" width="15"> Windows</h2>
 
 Download the appropriate installer:
 
 <div><a href="https://github.com/asyncy/cli/releases/download/0.0.6/asyncy-x64.exe" class="button">64-bit installer</a></div>
 <div><a href="#" class="button">32-bit installer</a></div>
 
-</details>
 </td>
 -->
 </tr>
 <tr>
 <td style="text-align:center" width="50%" valign="top">
-<details :open="$page.os === 'unix' || $page.os === 'linux'">
-<summary><h4><img src="../assets/ubuntu-logo.svg" width="15"> Ubuntu 16+</h4></summary>
+<h2><img src="../assets/ubuntu-logo.svg" width="15"> Ubuntu 16+</h2>
 
 
 
@@ -67,20 +64,16 @@ Download the appropriate installer:
 
 <small style="display:block; width: 100%"><a href="https://snapcraft.io/">Snap is available on other Linux OS.</a></small>
 
-</details>
 </td>
 <td style="text-align:center" width="50%" valign="top">
-<details :open="$page.os === 'unknown'">
-<summary><h4>Direct from Python</h4></summary>
+<h2>Direct from Python</h2>
 
 ```bash
 pip install --user story
 ```
 
-Python 3.6 or higher is required, thus on Debian/Ubuntu use `pip3`.
-The other installation methods listed are recommended.
+<small>Python 3.6 or higher is required, thus on Debian/Ubuntu use `pip3`.</small>
 
-</details>
 </td>
 </tr>
 </table>
