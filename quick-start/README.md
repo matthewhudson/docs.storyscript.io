@@ -98,7 +98,7 @@ mkdir first_app && cd first_app
 story apps create
 ```
 
-> This generated the `story.yml` file which is used to identify your application and provide metadata to configure version and secrets variables.
+> This command generated a `story.yml` file which is used to identify your application and provide metadata to configure version and secrets variables.
 
 We have created a few examples that can help you bootstrap your project. Let's start you off with the classic hello-world:
 
@@ -120,7 +120,7 @@ when http server listen method: "get" path: "/" as request
 
 ## Deploy to Storyscript Cloud
 
-The Storyscript Cloud is a microservice and function platform that uses Kubernetes and other cloud-native tooling as a fully managed microservice orchestration runtime. Simple put, **Storyscript make it easy to deploy and use microservices on Kubernetes.** 💪
+The Storyscript Cloud is a microservice and function platform that uses Kubernetes and other cloud-native tooling as a fully managed microservice orchestration runtime. Simple put, **Storyscript makes it easy to deploy and use microservices on Kubernetes.** 💪
 
 Let's deploy your story:
 
