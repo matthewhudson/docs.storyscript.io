@@ -55,7 +55,6 @@ Download the appropriate installer:
 -->
 </tr>
 <tr>
-<!--
 <td style="text-align:center" width="50%" valign="top">
 <details :open="$page.os === 'unix' || $page.os === 'linux'">
 <summary><h4><img src="../assets/ubuntu-logo.svg" width="15"> Ubuntu 16+</h4></summary>
@@ -70,7 +69,6 @@ Download the appropriate installer:
 
 </details>
 </td>
--->
 <td style="text-align:center" width="50%" valign="top">
 <details :open="$page.os === 'unknown'">
 <summary><h4>Direct from Python</h4></summary>
