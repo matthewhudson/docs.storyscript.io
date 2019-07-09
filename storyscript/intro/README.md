@@ -7,67 +7,73 @@ next: /storyscript/writing/
 
 ## Meet Storyscript
 
-Storyscript is the first top-level programming langauge that seamlessly connects microservices and functions together in a serverless way. We call this **Application Storytelling**™.
+✨Storyscript is the cloud-native, polyglot programming language that seamlessly moves data between microservices and functions with zero-devops deployments into Kubernetes so you can stay focused on what matters most: business-logic. ✨
 
-The design of Storyscript is to **move data**, with no boilerplate code, in a declarative and intuitive way.
-
-::: tip Inspiration behind Storyscript
-Storyscript is inspired by many popular languages to be as natural and intuitive as possible. It is declarative, strong-typed, static-typed and focused on top-level data-flow.
-:::
-
-
-### Example Syntax & Explanation
-
-In the example below we have two lines of code:
-
-1. The first line represents event data, being pushed from a microservice.
-2. The second line represents taking action on the incoming event data, harnessing another microservice.
-
+Let's start with the code. The snippet below shows the most important feature of Storyscript.
 
 ```coffeescript
 when service action event key:value as event  # Event-driven microservice
-  res = service action key:value              # HTTP/RPC microservice
-  result = someFunction(key:value)            # Any GPPL/Storyscript Function
-  someString.upper()                          # A type transformation
+  res = service action key:value              # Call microservice action
+  result = someFunction(key:value)            # Call function (any language)
+  someString.upper().split(by:' ')            # Cal data transformation
 ```
+::: tip Storyscript key features:
+- Strongly-typed.
+- Turing-complete.
+- Microservice orchestrator.
+- Distributed monolith.
+- Glue code between microservices and serverless functions.
+- Cloud-native compiled with zero-devops deployments.
+- Polyglot development (it **does not** replace high-level languages it connects them)
+:::
 
-Each service can be written in an independentent programming language, as they both adhere to the [OMG Standard](https://microservices.guide/), which Storyscript is built around.
+The code above would be your business-logic. After all, applications are stories of data; how you move data is what makes your application unique. Write your business-logic as Stories in Storyscript and deploy directly into Kubernetes with zero-configuration.
 
-Upon deployment, your **story** (the story of your data) gets compiled and translated into a production-ready Kubernetes data pipeline, ready to respond to incoming events, of any type. No configuration required. It's the best of all worlds — you get all the benefits of Kubernetes (open cloud, etc), without any of the headaches!
+The design of Storyscript is to **move data**, with no boilerplate code, in a declarative and intuitive way. Inspired by many popular languages to be as natural and intuitive as possible. It is declarative, strong-typed, static-typed and focused on top-level data-flow.
 
-Many think of Storyscript as glue code for microservices, flow-code, or pure business-logic programming. We call this **top-level programming**. This diagram shows how the language focuses on the most important aspect of application development: the business-logic.
+## Why Storyscript?
+
+Software development is a 90 year story of abstraction. Once physical punch cards were used to automate procedures turned into code enabling millions of people to call themselves developers. Modern development is built upon the foundation of well-abstracted stacks of software, a trend that is not gong to stop. Abstraction, to developers, means staying focused on what matters most. How one manages memory or threads is not business-logic. It's the story of moving data that defines our products, our businesses, our development and our lives. *Everything else is noise.*
+
+### The next abstraction: Top-level Programming
+
+**Low-level languages** empowered people to create extraordinary processes in a form that was significantly more readable than machine-code, yet left us with managing memory.
+
+**High-level languages** elevated our engineering by abstracting memory management and enabling package management for better sharing and code reusability, however, it left us with plenty of complexities that obfuscate business-logic. After all, most high-level languages were built before the cloud-era, most are designed to run on one computer.
+
+**Top-level languages** will abstract away most (if not all) the complexities that high-level languages have bringing development as-close-to pure business-logic as possible. Development will be focused on seamlessly moving data between polyglot domain-specific components of software. These services will do the heavy lifting while the top-level language will act as the data orchestrator.
+
+### Reduce complexities; focus on what matters most.
+
+There three types of complexities in software development.
+1. **Necessary Complexity** - required to accomplish your application, the business-logic. Moving data has complexity, there is no denying it. The way you move data, your story, is what makes your application unique.
+2. **Unnecessary Complexity** - things developers must do that is not business-logic, such as logging, metrics, configuration, dependency management, testing, deployments and scaling.
+3. **Accidental Complexity** - things that are accidents during development that cause bugs, downtime and lose of productivity.
+
+Ideally, development would be focused exclusively on necessary complexity but the industry is far from that. Today, one could argue that most our time is spend in unnecessary and accidental complexities. Storyscript aims to significantly reduce development complexities resulting in a steep improvement in productivity.
+
+### Staying super-DRY
 
 
-![abstraction](./abstraction.png)
 
-### Storyscript Language Values
+## Benefits
 
 1. **Transparency**.
   It looks like a monolith but is a full microservice/function serverless architecure.
 1. **Readability**.
-  The truth is in the code. Not only is Storyscript easy to read it's also easy to refactor, add features and traceback errors.
-1. **Polyglot**.
+  The truth is in the code. Not only is Storyscript easy to read it's also easy to refactor, add features and traceback errors. Developers read code 10x more often than they write code.
+1. **Inclusiveness** through polyglot development.
   Storyscript connects all existing languages together into one single cohesive story of data. This enables you to choose the right language for the job.
-1. **Zero-devops Deployments**.
+1. **Zero-DevOps Deployments**.
   When using Storyscript, Kubernetes configuration is an afterthought: port bindings, ingress controllers, central message queues, container couplings, infrastructure configuration, and custom scaling. Focus on what matters most.
 
 ![stackup](./stackup.png)
 
-## Why Storyscript?
-
-The developer dream is to build software like Legos; writing code as a story of data between well orchestrated services with the least amount of boilerplate and complexity.
-
-The goal of Storyscript is to be the thread that connects everything from a top-level design: API's, databases, functions, and microservices.
-
-We believe a language that connects polyglot services provides the most inclusive and unified platform opposed to focusing on extending one language which further fractures the many tribes of developers.
-
-Storyscript *does not replace any other language*. It merely connects them together— freeing the developer to chose the correct language and tools for the task at hand.
-
 ## Use Cases
 
-All backend-oriented services can be easily spawned from Storyscript— often with a single line of code.
+All backend-oriented services can be easily spawned from Storyscript— often with a single line of code and deployed without any Kubernetes configuration.
 
-Here are a few examples of the types of use-cases Storyscript is empowered to fufill:
+Here are a few examples of Storyscript use-cases:
 
 |                               	|                       	|                             	|
 |-------------------------------	|------------------------	|-----------------------------	|

@@ -1,6 +1,6 @@
 ---
 prev: false
-next: /storyscript/writing/
+next: /storyscript/intro/
 ---
 
 <script>
