@@ -13,8 +13,8 @@ Let's start with the code. The snippet below shows the key features of Storyscri
 
 ```coffeescript
 when service action eventName as event        # An event-driven microservice
-  result = aPythonFunction(foo:event['name']) # Call a function in any language
-  res = result.upper().split(by:' ')          # Do data transformation
+  result = aPythonFunction(foo:event["name"]) # Call a function in any language
+  res = result.upper().split(by:" ")          # Do data transformation
   service action bar:res                      # Call a microservice action
 ```
 
@@ -55,7 +55,7 @@ Ideally, development would be focused exclusively on necessary complexity but th
 
 ### Staying Super-DRY
 
-Development is soaking wet in technical debt 🌊. Yes, that's catchy, but very true. As an industry we need to ask ourselves: *why we are creating libraries for every language?* *Why are we responsible for soo much unnecessary complexity?* *When is the promise of Lego-style development coming true?*
+Development is soaking wet in technical debt 🌊. Yes, that's catchy, but very true. As an industry we need to ask ourselves: *Why do we create libraries in every language?* *Why are we responsible for soo much unnecessary complexity?* *When is the promise of Lego-style development coming true?*
 
 We believe the future of cloud-native development is domain-specialized microservices that are complete with their logging, metrics, scaling, health-checks while having standardized documentation. Docker took us only so far as it describes only how to *build* the container but nothing of what is inside of it and how it works. This is where the [Open Microservice Guide](https://microservice.guide/) (aka OMG) kicks in. This guide is not only a resource for helping build microservices, but a contract of communication. The OMG empowers engineers to build microservices in any language and any protocol in a declarative way that auto-generates documentation. Finally, standardization for microservices.
 
